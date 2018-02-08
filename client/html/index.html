@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="img">
+<head>
+	<meta charset="UTF-8">
+	<title>Images Handling</title>
+	<link rel="icon" href="/img/favicon.png" type="image/gif" sizes="64x64">
+	<link rel="stylesheet" href="/css/index.css">
+</head>
+<body ng-controller="main">
+	<div>
+		<label>
+			<span>Search</span>
+			<select ng-model="sortVal" ng-options="s for s in sortBy" ng-change="sort()"></select>
+		</label>
+	</div>
+	<div class="images_container" lazy-img-container>
+		<div ng-repeat="img in _images||images" class="image_container" title="{{img.points}}">
+			<img src='/img/load.gif' lazy-img="/_img{{img.loc}}">
+			<p>{{img.loc}}</p>
+			<p>{{img.points}}</p>
+			<button ng-click="delete(img, $index);">Delete</button>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="/js/angular-lazy-img.js"></script>
+	<script src="/js/img.js"></script>
+</body>
+</html>

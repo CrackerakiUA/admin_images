@@ -1,0 +1,11 @@
+.images_container{
+	.image_container{
+		display: inline-block;
+		width: 20%;
+		padding: 1%;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}

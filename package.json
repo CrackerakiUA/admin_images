@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "description": "test project Admin Images",
+  "keywords": [
+    "images"
+  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Honchar Denys",
+    "email": "crackeraki@gmail.com",
+    "url": "https://github.com/CrackerakiUA"
+  },
+  "engines": {
+    "node": ">=6.10.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.3",
+    "morgan": "^1.9.0",
+    "node-sass-middleware": "^0.11.0",
+    "recursive-readdir": "^2.2.1"
+  }
+}
