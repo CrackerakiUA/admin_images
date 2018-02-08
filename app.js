@@ -14,9 +14,6 @@
 	app.use(require('body-parser').json({
 		'limit': '5mb'
 	}));
-	// app.use(require('cookie-parser')());
-	// app.use(require('morgan')('dev'));
-	// app.use(require('method-override')('X-HTTP-Method-Override'));
 	app.use(require('node-sass-middleware')({
 		src: process.cwd() + '/client',
 		dest: process.cwd() + '/client',
