@@ -44,7 +44,7 @@
 			var counter = files.length;
 			for (var i = 0; i < files.length; i++) {
 				files[i] = {
-					loc: files[i].split('_images')[1]
+					loc: files[i].split('/_images/')[1]
 				}
 				attach_points(files[i], function(){
 					if(--counter===0) res.json(files);

@@ -17,7 +17,6 @@
 		<div ng-repeat="img in _images||images" class="image_container" title="{{img.points}}">
 			<img src='/img/load.gif' lazy-img="/_img{{img.loc}}">
 			<p>{{img.loc}}</p>
-			<p>{{img.points}}</p>
 			<button ng-click="delete(img, $index);">Delete</button>
 		</div>
 	</div>
